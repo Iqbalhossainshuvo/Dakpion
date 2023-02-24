@@ -1,12 +1,13 @@
 import React from 'react';
-import {CiUser} from 'react-icons/ci';
-import {AiOutlineUsergroupAdd} from 'react-icons/ai';
-import {AiOutlineHome} from 'react-icons/ai';
-import {AiOutlineMail} from 'react-icons/ai';
-import {BiShoppingBag} from 'react-icons/bi';
-import {AiOutlineSetting} from 'react-icons/ai';
-import {CgProfile} from 'react-icons/cg';
-import {HiOutlineLogout} from 'react-icons/hi';
+import { CiUser } from 'react-icons/ci';
+import { AiOutlineUsergroupAdd } from 'react-icons/ai';
+import { AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BiShoppingBag } from 'react-icons/bi';
+import { AiOutlineSetting } from 'react-icons/ai';
+import { CgProfile } from 'react-icons/cg';
+import { HiOutlineLogout } from 'react-icons/hi';
+import {AiOutlineSearch} from 'react-icons/ai'
 
 import NavBar from './NavBar';
 
@@ -18,39 +19,185 @@ const MessaengerLayout = () => {
             <NavBar></NavBar>
             <div className='grid grid-cols-12'>
                 <div class="flex flex-row h-screen w-screen	 bg-gray-100" >
-                    <div class="flex flex-col justify-between items-center flex-none w-16 bg-gray-200">
+                    <div class="flex flex-col justify-between items-center flex-none w-16 ">
                         <div class="flex flex-col space-y-4 w-full items-center pt-7">
-                            <a><div title='Dashbord' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"> <AiOutlineHome className='text-2xl m-auto pt-1'/></div></a>
+                            <a><div title='Dashbord' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"> <AiOutlineHome className='text-2xl m-auto pt-1' /></div></a>
                             <a class="block relative w-full h-16 w-16 flex justify-center items-center">
                                 <div title='Massage' className='rounded-full bg-gray-400 w-8 h-8 cursor-pointer'>
-                                <AiOutlineMail className="w-6 h-6 text-2xl m-auto pt-1"/>
+                                    <AiOutlineMail className="w-6 h-6 text-2xl m-auto pt-1" />
                                 </div>
                                 <div class="absolute top-0 right-0 mr-3 mt-3 bg-red-500 w-4 h-4 text-xs text-white rounded-full text-center">5</div>
                             </a>
-                            <a><div title='Users' className='rounded-full bg-gray-400 w-8 h-8 cursor-pointer text-black'><CiUser class=" text-2xl m-auto pt-1"/></div></a>
-                            <a><div title='Group' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><AiOutlineUsergroupAdd className='text-2xl m-auto pt-1'/></div></a>
-                            <a><div title='Shoping' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><BiShoppingBag className='text-2xl m-auto pt-1'/></div></a>
-                            <a><div title='Setting'  class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><AiOutlineSetting className='text-2xl m-auto pt-1'/></div></a>
+                            <a><div title='Users' className='rounded-full bg-gray-400 w-8 h-8 cursor-pointer text-black'><CiUser class=" text-2xl m-auto pt-1" /></div></a>
+                            <a><div title='Group' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><AiOutlineUsergroupAdd className='text-2xl m-auto pt-1' /></div></a>
+                            <a><div title='Shoping' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><BiShoppingBag className='text-2xl m-auto pt-1' /></div></a>
+                            <a><div title='Setting' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><AiOutlineSetting className='text-2xl m-auto pt-1' /></div></a>
                         </div>
                         <div class="flex flex-col space-y-4 pb-5">
-                            <a><div title='profile' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><CgProfile className='text-3xl m-auto pt-1'/></div></a>
-                            <a><div title='LogOut' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><HiOutlineLogout className='text-2xl m-auto pt-1'/></div></a>
+                            <a><div title='profile' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><CgProfile className='text-3xl m-auto pt-1' /></div></a>
+                            <a><div title='LogOut' class="rounded-full bg-gray-400 w-8 h-8 cursor-pointer"><HiOutlineLogout className='text-2xl m-auto pt-1' /></div></a>
                         </div>
 
                     </div>
                     {/* Side Menu end */}
-                    <div class="w-64 flex-none bg-gray-100 p-4 flex flex-col space-y-4">
+                    <div class="w- flex-none bg-slate-200 p-4 flex flex-col space-y-4">
                         <div class="flex flex-row justify-between items-center mb-6">
                             <h1 class="font-semibold text-2xl">Chats</h1>
-                            <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <input type="text" placeholder="Type here" className="input input-bordered input-md w-full max-w-xs" /> <AiOutlineSearch className='ml-[50px]'/>
                         </div>
 
-                        <div class="bg-red-200 h-64"></div>
-                        <div class="bg-red-200 h-64"></div>
+                        <div class=" h-64">
+                            {/* Chat 1  */}
+                            <div className='text-white bg-blue-600 py-5 rounded-xl p-5 hover:scale-105 duration-300 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-8' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Chat 2  */}
+
+
+                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-4.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Chat 3  */}
+
+
+                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-7.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        {/* Chat 4  */}
+
+
+                        <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-15.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            {/* Chat 5  */}
+
+
+                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-13.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            {/* Chat 6  */}
+
+
+                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            {/* Chat 7  */}
+
+
+                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            {/* Chat 8  */}
+
+
+                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10' alt='' />
+                                    <div className='ml-5'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold'>John Travolta</h4>
+                                            <span className='font-bold'>03:20 PM</span>
+                                        </div>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
                     </div>
                     {/*End Contact */}
                     <div class="flex flex-row flex-auto bg-white rounded-tl-xl border-l shadow-xl">
-                       {/*  <div class="flex flex-col w-1/5">
+                        {/*  <div class="flex flex-col w-1/5">
                             <div class="flex-none h-24 bg-red-200"> top</div>
 
                             <div class="flex-auto overflow-y-auto">
@@ -157,7 +304,7 @@ const MessaengerLayout = () => {
                             </div>
                         </div>
                         {/* End Right side */}
-                        
+
                     </div>
                 </div>
 
