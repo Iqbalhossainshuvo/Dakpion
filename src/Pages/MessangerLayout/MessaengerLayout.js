@@ -43,7 +43,7 @@ const MessaengerLayout = () => {
                     <div class="w- flex-none bg-slate-200 p-4 flex flex-col space-y-4">
                         <div class="flex flex-row justify-between items-center mb-6">
                             <h1 class="font-semibold text-2xl">Chats</h1>
-                            <input type="text" placeholder="Type here" className="input input-bordered input-md w-full max-w-xs" /> <AiOutlineSearch className='ml-[50px]'/>
+                            <input type="text" placeholder="Searching" className="input input-bordered input-md w-full max-w-xs" /> 
                         </div>
 
                         <div class=" h-64">
