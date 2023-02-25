@@ -1,5 +1,6 @@
 import React from 'react';
 import {CiUser} from 'react-icons/ci'
+import MessageField from './MessageField';
 
 import NavBar from './NavBar';
 
@@ -80,7 +81,8 @@ const MessaengerLayout = () => {
                         </div> */}
                         {/* End User list */}
                         <div class="w-4/5 border-l border-r border-gray-400 flex flex-col">
-                            <div class="flex-none h-20 flex flex-row justify-between items-center p-5 border-b">
+                            <MessageField/>
+                            {/* <div class="flex-none h-20 flex flex-row justify-between items-center p-5 border-b">
                                 <div class="flex flex-col space-y-1">
                                     <strong>Iqbal Shuvo</strong>
                                     <input type="text" placeholder="Add coversation title" class="text-sm outline-none border-b border-dashed text-black placeholder-gray-600" />
@@ -126,7 +128,7 @@ const MessaengerLayout = () => {
 
                             <div class="flex-none h-40 p-4 pt-0">
                                 <textarea class="w-full h-full outline-none border focus:border-blue-600 hover:border-blue-600 rounded p-4 shadow-lg">Hi</textarea>
-                            </div>
+                            </div> */}
                         </div>
                         {/* Message Field */}
 
