@@ -8,9 +8,6 @@ import { BiShoppingBag } from 'react-icons/bi';
 import { AiOutlineSetting } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import { HiOutlineLogout } from 'react-icons/hi';
-import {AiOutlineSearch} from 'react-icons/ai'
-
-import {CiUser} from 'react-icons/ci'
 import MessageField from './MessageField';
 
 
@@ -45,159 +42,125 @@ const MessaengerLayout = () => {
 
                     </div>
                     {/* Side Menu end */}
-                    <div class="w- flex-none bg-slate-200 p-4 flex flex-col space-y-4">
+                    <div class="w-1/4 flex-none bg-white p-4 flex flex-col space-y-4">
                         <div class="flex flex-row justify-between items-center mb-6">
                             <h1 class="font-semibold text-2xl">Chats</h1>
-                            <input type="text" placeholder="Searching" className="input input-bordered input-md w-full max-w-xs" /> 
+                            <input type="text" placeholder="Searching" className=" ml-4 focus:outline-none p-2 w-full shadow-md rounded-md " /> 
                         </div>
 
-                        <div class=" h-64">
+                        <div class="shadow-md rounded-xl">
                             {/* Chat 1  */}
-                            <div className='text-white bg-blue-600 py-5 rounded-xl p-5 hover:scale-105 duration-300 cursor-pointer'>
+                            <div className='bg-white p-4 rounded-xl  hover:scale-105  duration-300 cursor-pointer'>
                                 <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-8' alt='' />
-                                    <div className='ml-5'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                                    <div className='ml-4'>
                                         <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
+                                            <h4 className='font-bold '>Iqbal Shuvo</h4>
+                                           <p className='ml-8 text-end'>03:20 PM</p>
                                         </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
+                                        <p className='text-start'>Last message</p>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Chat 2  */}
-
-
-                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-4.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Chat 3  */}
-
-
-                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-7.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        {/* Chat 4  */}
-
-
-                        <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-15.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            {/* Chat 5  */}
-
-
-                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-13.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            {/* Chat 6  */}
-
-
-                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                            {/* Chat 7  */}
-
-
-                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-                            {/* Chat 8  */}
-
-
-                            <div className='text-black bg-slate-100  py-5 tracking-wide hover:scale-105 duration-300 rounded-xl p-5 mt-4 cursor-pointer'>
-                                <div className='flex'>
-                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10' alt='' />
-                                    <div className='ml-5'>
-                                        <div className='flex justify-between'>
-                                            <h4 className='font-bold'>John Travolta</h4>
-                                            <span className='font-bold'>03:20 PM</span>
-                                        </div>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not sim</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
+                            
                         </div>
+                        {/* Chat 1  end  */}
+
+                        <div class="shadow-md rounded-xl">
+                            {/* Chat 2  */}
+                            <div className='bg-white p-4 rounded-xl  hover:scale-105  duration-300 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                                    <div className='ml-4'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold '>John Travolta</h4>
+                                           <p className='ml-8 text-end'>03:20 PM</p>
+                                        </div>
+                                        <p className='text-start'>Last message</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        {/* Chat 2 end  */}
+
+                        <div class="shadow-md rounded-xl">
+                            {/* Chat 3 */}
+                            <div className='bg-white p-4 rounded-xl  hover:scale-105  duration-300 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                                    <div className='ml-4'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold '>John Travolta</h4>
+                                           <p className='ml-8 text-end'>03:20 PM</p>
+                                        </div>
+                                        <p className='text-start'>Last message</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        {/* Chat 3  end  */}
+
+                        <div class="shadow-md rounded-xl">
+                            {/* Chat 4  */}
+                            <div className='bg-white p-4 rounded-xl  hover:scale-105  duration-300 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                                    <div className='ml-4'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold '>John Travolta</h4>
+                                           <p className='ml-8 text-end'>03:20 PM</p>
+                                        </div>
+                                        <p className='text-start'>Last message</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        {/* Chat 4  end  */}
+
+                        <div class="shadow-md rounded-xl">
+                            {/* Chat 5  */}
+                            <div className='bg-white p-4 rounded-xl  hover:scale-105  duration-300 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                                    <div className='ml-4'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold '>John Travolta</h4>
+                                           <p className='ml-8 text-end'>03:20 PM</p>
+                                        </div>
+                                        <p className='text-start'>Last message</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        {/* Chat 5  end  */}
+
+                        <div class="shadow-md rounded-xl">
+                            {/* Chat 6 */}
+                            <div className='bg-white p-4 rounded-xl  hover:scale-105  duration-300 cursor-pointer'>
+                                <div className='flex'>
+                                    <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                                    <div className='ml-4'>
+                                        <div className='flex justify-between'>
+                                            <h4 className='font-bold '>John Travolta</h4>
+                                           <p className='ml-8 text-end'>03:20 PM</p>
+                                        </div>
+                                        <p className='text-start'>Last message</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        {/* Chat 6  end  */}
                         
                     </div>
                     {/*End Contact */}
@@ -242,53 +205,6 @@ const MessaengerLayout = () => {
                         {/* End User list */}
                         <div class="w-4/5 border-l border-r border-gray-400 flex flex-col">
                             <MessageField/>
-                            {/* <div class="flex-none h-20 flex flex-row justify-between items-center p-5 border-b">
-                                <div class="flex flex-col space-y-1">
-                                    <strong>Iqbal Shuvo</strong>
-                                    <input type="text" placeholder="Add coversation title" class="text-sm outline-none border-b border-dashed text-black placeholder-gray-600" />
-                                </div>
-                                <div class="flex flex-row items-center">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex-auto overflow-y-auto p-5 space-y-4"
-                                style={{ background: 'red' }}
-                            >
-                                <div class="flex flex-row space-x-2">
-                                    <svg class="flex-none w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-
-                                    <div class="flex flex-col">
-                                        <div class="bg-gray-200 rounded p-5">
-                                            Some message text
-                                        </div>
-                                        <div class="text-sm text-gray-600">4hr ago</div>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-row justify-center text-sm text-gray-600">
-                                    You assigned this conversation to yourself 5d ago
-                                </div>
-
-                                <div class="flex flex-row space-x-2 flex-row-reverse space-x-reverse">
-                                    <svg class="flex-none w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-
-                                    <div class="flex flex-col">
-                                        <div class="bg-blue-100 rounded p-5">
-                                            Some message text
-                                        </div>
-                                        <div class="text-sm text-gray-600">5hr ago</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex-none h-40 p-4 pt-0">
-                                <textarea class="w-full h-full outline-none border focus:border-blue-600 hover:border-blue-600 rounded p-4 shadow-lg">Hi</textarea>
-                            </div> */}
                         </div>
                         {/* Message Field */}
 

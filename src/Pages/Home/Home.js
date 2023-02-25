@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css'
-import Capture5 from '../Assets/Images/Capture5.PNG';
 import bg from '../Assets/Images/bg.jpg'
 import bg3 from '../Assets/Images/bg3.png'
 
