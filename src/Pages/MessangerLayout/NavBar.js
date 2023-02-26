@@ -27,11 +27,11 @@ const NavBar = () => {
             <li>
               <a href="javascript:;" class="h-full dropdown-toggle flex items-center pl-5">
                 <div class="w-8 h-8 image-fit bg-black rounded-full shadow-md">
-                  <img alt="" class="rounded-full shadow-md bg-black" src="" />
+                  <img alt="" class="rounded-full shadow-md " src="https://i.ibb.co/MgpVRb3/iqbal-class-pic.jpg" />
                 </div>
                 <div class="hidden md:block ml-3">
-                  <div class="w-28 truncate font-medium leading-tight">Keanu Reeves</div>
-                  <div class="account-dropdown__info text-xs text-gray-600">Frontend Engineer</div>
+                  <div class="w-28 truncate font-medium leading-tight">Iqbal Shuvo</div>
+                  <div class="account-dropdown__info text-xs text-gray-600">Front end ENGINEER</div>
                 </div>
               </a>
             </li>

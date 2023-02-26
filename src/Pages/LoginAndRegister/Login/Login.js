@@ -47,15 +47,17 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <input
-                className="btn text-black  bg-cyan-300 border-0 rounded-lg hover:bg-[#8c52ff] hover:text-white hover:rounded-full"
-                type="submit"
-                value="Login"
-              />
+              <Link to='/messenger' className="form-control mt-6">
+                <input
+                  className="btn text-black  bg-cyan-300 border-0 rounded-lg hover:bg-[#8c52ff] hover:text-white hover:rounded-full"
+                  type="submit"
+                  value="Login"
+                />
+              </Link>
             </div>
           </form>
           <p className="text-center pb-2">
-            New at Smile Photography?{" "}
+            New at Dakpion?{" "}
             <Link to="/register" className="text-blue-600 font-bold">
               SignUp
             </Link>
