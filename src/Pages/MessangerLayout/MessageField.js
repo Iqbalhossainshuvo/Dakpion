@@ -51,9 +51,9 @@ const MessageField = () => {
         <>
             <div class="flex-none h-20 flex flex-row justify-between items-center p-5 border-b">
                 <div className='flex '>
-                <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                <img src='https://i.ibb.co/VSHWpW4/mamun.png' className='rounded-full w-10 h-10' alt='' />
                 <div class="flex flex-col ml-4 ">
-                    <strong>Iqbal Shuvo</strong>
+                    <strong>Md Mamunur Rashid</strong>
                    <p class="text-sm text-start" >last Message </p>
                 </div>
                 </div>
@@ -68,11 +68,11 @@ const MessageField = () => {
                 style={{ background: '' }}
             >
                 <div class="flex flex-row space-x-2">
-                <img src='http://topson.left4code.com/dist/images/profile-9.jpg' className='rounded-full w-10 h-10' alt='' />
+                <img src='https://i.ibb.co/VSHWpW4/mamun.png' className='rounded-full w-10 h-10' alt='' />
 
                     <div class="flex flex-col">
                         <div class="bg-white shadow-md  p-2 m-1 rounded-lg p-2 m-1 max-w-fit">
-                            Some message text
+                            Hi 
                         </div>
                         <div class="text-sm text-gray-600 ">4hr ago</div>
                     </div>
@@ -104,6 +104,21 @@ const MessageField = () => {
                      
 
                     </div>
+                </div>
+
+
+
+                <div class="flex-auto overflow-y-auto p-5 space-y-4" >
+                <div class="flex flex-row space-x-2">
+                <img src='https://i.ibb.co/VSHWpW4/mamun.png' className='rounded-full w-10 h-10' alt='' />
+
+                    <div class="flex flex-col">
+                        <div class="bg-white shadow-md  p-2 m-1 rounded-lg p-2 m-1 max-w-fit">
+                            Hi 
+                        </div>
+                        <div class="text-sm text-gray-600 ">1min ago</div>
+                    </div>
+                </div>
                 </div>
             </div>
 

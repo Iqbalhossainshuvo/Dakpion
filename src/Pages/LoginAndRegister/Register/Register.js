@@ -68,11 +68,13 @@ const Register = () => {
               />
             </div>
             <div className="form-control mt-6">
-              <input
+             <Link to='/messenger' className="form-control mt-6">
+             <input
                 className="btn text-black  bg-cyan-300 border-0 rounded-lg hover:bg-[#8c52ff] hover:text-white hover:rounded-full"
                 type="submit"
                 value="SignUp"
               />
+             </Link>
             </div>
           </form>
           <p className="text-center pb-10">
