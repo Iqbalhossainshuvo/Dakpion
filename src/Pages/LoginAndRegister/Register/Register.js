@@ -1,8 +1,13 @@
 import React from "react";
+import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
-import photo from "../../../assets/dakpion circle.png";
+
+
 
 const Register = () => {
+
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -11,7 +16,41 @@ const Register = () => {
     const password = form.password.value;
     const photoURL = form.photoURL.value;
     console.log(email, password);
+
+    const image = form.image.files[0]
+
+
+        const formData = new FormData()
+        formData.append('image', image)
+        const url = "https://api.imgbb.com/1/upload?key=bb406e6aefacc44e37d7220991feb6f5"
+
+        fetch(url, {
+            method: 'POST',
+            body: formData,
+        })
+            .then(res => res.json())
+            .then(imageData => {
+
+                const imageUrl = imageData.data.display_url
+                (email, password)
+                    .then(result => {
+                     toast.success()
+                        form.reset();
+
+                    })
+                    .catch(error => {
+                        toast.error(error.message);
+                    })
+
+
+            })
+            .catch(err => console.error(err))
+
   };
+
+
+
+
 
   return (
     <div>
@@ -36,9 +75,9 @@ const Register = () => {
                 <span className="label-text">PhotoURL</span>
               </label>
               <input
-                type="text"
+                type="file"
                 name="photoURL"
-                placeholder="Enter Your PhotoURL"
+                placeholder="Upload Your PhotoURL"
                 className="input input-bordered rounded-xl"
                 required
               />
@@ -69,7 +108,8 @@ const Register = () => {
             </div>
             <div className="form-control mt-6">
              <Link to='/messenger' className="form-control mt-6">
-             <input
+             <input 
+             
                 className="btn text-black  bg-cyan-300 border-0 rounded-lg hover:bg-[#8c52ff] hover:text-white hover:rounded-full"
                 type="submit"
                 value="SignUp"
